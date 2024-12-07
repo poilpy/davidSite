@@ -9,37 +9,70 @@ import { Image } from 'astro:assets';
 	<main class=' mx-auto m-16'>
 		<div class=" hero min-h-screen">
 			<div class="hero-overlay bg-opacity-20"></div>
-			<div class="prose hero-content text-neutral-content text-center bg-stone-900 bg-opacity-60">
-				<div class="max-w-md">
+			<div class="prose hero-content text-neutral-content text-center bg-stone-800 bg-opacity-80">
+				<div class="max-w-screen">
         
-                <h1 class="mb-5 text-5xl font-bold">Our Services</h1>
-                
-                <h3>hydro jetting</h3>
-                <p class="mb-5 ">
-                We offer the latest in hydro jetting technology to clear any clog safely and without damage to pipes, including clearing stubborn root growth from drains.
-                </p>
-                Water Heater Replacement
-                From electric to tankless to traditional tank heaters, we’ve got your water heater needs covered.
+                    <h1 class="mb-5 text-5xl font-bold">Our Services</h1>
+                    
+                    <div class="grid grid-cols-2 gap-4">
 
-                Sewer lateral replacement
-                Most houses in San Francisco were originally built with a terra cotta sewer system which erodes and becomes compromised over the years. We offer the best solutions for updating your sewer to a modern system.
+                        <div>
+                            <h2>
+                                hydro jetting
+                            </h2>
+                            <p class="mb-5 ">
+                            We offer the latest in hydro jetting technology to clear any clog safely and without damage to pipes, including clearing stubborn root growth from drains.
+                            </p>
+                        </div>
+                    
+                        <div>
+                            <h2>
+                                Water Heater Replacement
+                            </h2>
+                            <p class="mb-5 ">
+                                From electric to tankless to traditional tank heaters, we’ve got your water heater needs covered.
+                            </p>
+                        </div>
 
-                toilet services
-                From clogs to toilet rebuilds or replacements, we can do it all.
+                        <div>
+                            <h2>Sewer lateral replacement</h2>
+                            Most houses in San Francisco were originally built with a terra cotta sewer system which erodes and becomes compromised over the years. We offer the best solutions for updating your sewer to a modern system.
+                        </div>
 
-                We will service your entire drain system inside and outside the house to make sure the pipes are flowing effectively.
+                        <div>
+                            <h2>toilet services</h2>
+                            From clogs to toilet rebuilds or replacements, we can do it all.
+                        </div>
 
-                drain clogs
-                Gas Systems
-                We offer the latest technologies such as mega press and earthquake shutoff valves.
 
-                Re-piping
-                We can replace your entire water delivery system, expertly tailored to meet your needs.
+                        <div>
+                            <h2>drain clogs</h2>
+                            We will service your entire drain system inside and outside the house to make sure the pipes are flowing effectively.
+                        </div>
 
-                Sump pumps
-                We can service, replace or install sump pump systems in your home.
+                        <div>
+                            <h2>Gas Systems</h2>
+                            We offer the latest technologies such as mega press and earthquake shutoff valves.
+                        </div>
 
-                We can handle any plumbing needs, from garbage disposals to shower valve replacements. No job is too big or too small. Call now for an estimate.
+                        <div>
+                            <h2>Re-piping</h2>
+                            We can replace your entire water delivery system, expertly tailored to meet your needs.
+                        </div>
+
+                        <div>
+                            <h2>Sump pumps</h2>
+                            We can service, replace or install sump pump systems in your home.
+                        </div>
+
+                        
+                    </div>
+                    <div>
+                        <h2>something else?</h2>
+                        We can handle any plumbing needs, from garbage disposals to shower valve replacements. No job is too big or too small. Call now for an estimate.
+                    
+                    </div>
+                </div>
             </div>  
         </div>
     </div>
@@ -51,4 +84,8 @@ import { Image } from 'astro:assets';
 	.hero {
 		background-image: url('../assets/cover2.JPG');
 	}
+
+    .hero-content {
+        max-width: 60%;
+    }
 </style>
