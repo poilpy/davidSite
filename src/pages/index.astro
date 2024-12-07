@@ -1,0 +1,35 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+
+
+
+
+---
+
+<Layout title='Welcome to Astro.'>
+	<main class=' mx-auto m-16'>
+		<div class=" hero min-h-screen">
+			<div class="hero-overlay bg-opacity-20"></div>
+			<div class="prose hero-content text-neutral-content text-center bg-stone-900 bg-opacity-60">
+				<div class="max-w-md">
+				<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+				<p class="mb-5 ">
+					Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+					quasi. In deleniti eaque aut repudiandae et a id nisi.
+				</p>
+				<a href="/services/#personal_shopping"><button class="btn btn-primary">Get Started</button></a>
+				</div>
+			</div>
+		</div>
+	</main>
+  </Layout>
+
+
+<style>
+	.hero {
+		background-image: url('../assets/cover.JPG');
+	}
+</style>
