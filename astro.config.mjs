@@ -6,5 +6,8 @@ import swup from '@swup/astro';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), swup()]
+  integrations: [tailwind(), swup(
+    {
+    }
+  )]
 });
