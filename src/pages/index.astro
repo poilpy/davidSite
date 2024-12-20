@@ -2,7 +2,7 @@
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-
+import Form from '../components/form.astro';
 
 
 
@@ -11,19 +11,21 @@ import { Image } from 'astro:assets';
 
 <Layout title='Welcome to Astro.'>
 	<main class=' mx-auto m-2'>
-		<div class=" hero min-h-screen">
+		<div class="hero min-h-screen">
 			<div class="hero-overlay bg-stone-800 bg-opacity-70"></div>
-			<div class="prose hero-content text-neutral-content text-center">
+			<div class="prose hero-content max-w text-neutral-content text-right">
 				<div class="max-w-md">
-				<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-				<p class="mb-5 ">
-					Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-					quasi. In deleniti eaque aut repudiandae et a id nisi.
-				</p>
-				<a href="/services/#personal_shopping"><button class="btn btn-primary">Get Started</button></a>
+					<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+					<p class="mb-5 text-lg">
+						At Legend Plumbing and Drain, we are proud to serve the San Francisco community with top-notch plumbing services. Whether you need a simple repair, a complex installation, or emergency assistance, our team of experienced professionals is here to help. We handle every kind of plumbing job with the utmost care and expertise, ensuring your satisfaction every step of the way. Contact us today to experience the legendary service you deserve!
+
+					</p>
+					<a href="/services/#personal_shopping"><button class="btn btn-primary">View Services</button></a>
 				</div>
 			</div>
 		</div>
+		
+		
 	</main>
   </Layout>
 
