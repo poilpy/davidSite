@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import Form from '../components/form.astro';
+
+---
+
+<Layout title="Contact Us - Legend Plumbing and Drain">
+    <main class="mx-auto m-2">
+        <div class="hero min-h-screen">
+            <div class="hero-overlay bg-stone-800 bg-opacity-80"></div>
+            <div class="prose hero-content max-w-screen-2xl text-neutral-content text-left">
+                <div class="max-w">
+                    <Form/>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .hero {
+        background-image: url('../assets/cover.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+</style>

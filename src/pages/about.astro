@@ -12,9 +12,9 @@ import { Image } from 'astro:assets';
 <Layout title='Welcome to Astro.'>
 	<main class=' mx-auto m-2'>
 		<div class=" hero min-h-screen">
-			<div class="hero-overlay bg-stone-900 bg-opacity-80"></div>
-			<div class="prose hero-content text-neutral-content text-center ">
-				<div class="max-w-md">
+			<div class="hero-overlay bg-stone-900 bg-opacity-70"/>
+			<div class="prose hero-content max-w-screen-xl text-neutral-content text-left ">
+				<div class="max-w">
 				<h1 class="mb-5 text-5xl font-bold">Who We Are</h1>
 				<p class="mb-5 ">
 					Hi, I’m David. I’m a native San Franciscan and currently reside in San Francisco’s Richmond District. I founded Legend Plumbing because I wanted to provide high quality, trustworthy, and fairly priced plumbing services to the Bay Area community. My team has over ten years of experience and we’re able to handle any plumbing issue that might arise. No job is too big or too small. We pride ourselves on our prompt, friendly service and our ability to offer straightforward solutions for all your plumbing needs. Whatever your issue is, we can probably help. Feel free to give us a call and we can diagnose your problem and discuss possible solutions. We look forward to working with you!
@@ -30,5 +30,14 @@ import { Image } from 'astro:assets';
 <style>
 	.hero {
 		background-image: url('../assets/cover3.JPG');
+		background-size: cover;
+		background-position: bottom;
+	}
+	@media (min-width: 1024px) {
+		.hero {
+			background-image: url('../assets/cover3.JPG');
+			background-position: bottom;
+			background-size: 140%;
+		}
 	}
 </style>
