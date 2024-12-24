@@ -18,10 +18,11 @@ import Footer from '../components/Footer.astro';
 		<title>Astro Basics</title>
 	</head>
 
-	<Navbar/>
-	<body>
-		<slot />
-	</body>
+	<Navbar>
+		<body>
+			<slot />
+		</body>
+	</Navbar>
 	<Footer/>
 </html>
 
