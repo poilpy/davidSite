@@ -9,5 +9,6 @@ export default defineConfig({
   integrations: [tailwind(), swup(
     {
     }
-  )]
+    )],
+    output: 'server', // Changed to a valid option
 });
