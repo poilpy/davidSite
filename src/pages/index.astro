@@ -32,6 +32,13 @@ import Form from '../components/form.astro';
 
 <style>
 	.hero {
-		background-image: url('../assets/cover.JPG');
+		background-image: url('../assets/cover2.JPG');
+		background-size: cover;
+	}
+	@media (min-width: 1024px) {
+		.hero {
+			background-image: url('../assets/cover2.JPG');
+			background-size: 140%;
+		}
 	}
 </style>
