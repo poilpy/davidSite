@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import Form from '../components/form.astro';
 
-import cover from '../assets/cover.jpg';
+import cover from '/public/assets/cover.jpg';
 
 ---
 
@@ -17,18 +17,12 @@ import cover from '../assets/cover.jpg';
                 </div>
             </div>
         </div>
-        <Image loading="eager"
-            alt="Legend Plumbing and Drain Company Logo"
-            width="480"
-            height="480"
-            src={cover}
-        />
     </main>
 </Layout>
 
 <style>
     .hero {
-        background-image: url('../assets/cover.jpg');
+        background-image: url('/public/assets/cover.JPG');
         background-size: cover;
         background-position: center;
     }
