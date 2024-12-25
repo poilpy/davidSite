@@ -10,5 +10,5 @@ export default defineConfig({
     {
     }
     )],
-    output: 'server', // Changed to a valid option
+    output: 'static', // Changed to a valid option
 });
