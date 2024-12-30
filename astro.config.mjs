@@ -3,12 +3,16 @@ import { defineConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
 import swup from '@swup/astro';
+import SwupFormsPlugin from '@swup/forms-plugin';
+
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), swup(
     {
+      forms: true,
     }
     )],
-    output: 'server', // Changed to a valid option
+    output: 'static', // Changed to a valid option
 });
+
